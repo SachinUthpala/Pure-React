@@ -18,11 +18,13 @@
     <!-- react code -->
     <script>
       function App(){
-        return React.createElement("header");
+
+        const time = new Date().toLocaleTimeString();
+        return React.createElement("header" , null , 'Hello React!');
       }
 
-      const root = ReactDom.createRoot(document.getElementById("root"));
-      root.render(React.createElement(App));
+      const root = ReactDom.createRoot(document.getElementById('root'));
+      root.render(React.createElement(App()));
     </script>
   </body>
 </html>
